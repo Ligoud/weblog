@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Nav from 'react-bootstrap/Nav'
 
-export  default class CustomNavbar extends React.Component{
+export default class CustomNavbar extends React.Component{
 
     render(){
       return(
@@ -14,13 +14,13 @@ export  default class CustomNavbar extends React.Component{
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">              
                 <Nav className='mr-auto'>
-                    <Nav.Link>Расписание</Nav.Link>
+                    <Nav.Link onClick={(type)=>this.props.clickEvent('text')}>Расписание</Nav.Link>
                     <NavDropdown title='Информация'>
                       <NavDropdown.Item>Принципы работы</NavDropdown.Item>
                       <NavDropdown.Item>О логопеде</NavDropdown.Item>
                       <NavDropdown.Item>Об онлайн занятиях</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link>Контакты</Nav.Link>
+                    <Nav.Link onClick={type=>this.props.clickEvent('failed')}>Контакты</Nav.Link>
                     <Nav.Link disabled>Игры (скоро)</Nav.Link>
                 </Nav>
                 <Nav>
