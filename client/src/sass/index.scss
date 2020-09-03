@@ -1,15 +1,18 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+@import 'extends';
 
 .dropdown-item:hover{
     background-color: rgba(80, 80, 80, 0.116);
 }
 
 .mainContent{
-    background-color: #59627518;
+    background-color: #80859118;
     border-left: 2px solid black;
     border-right: 2px solid black;
-}
-.contentRow{
-    height: 90vh;
 
+    overflow-y: scroll;
+}
+
+.contentRow{
+    height: 91vh;
 }

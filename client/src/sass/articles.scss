@@ -1,0 +1,45 @@
+
+
+$artRowBorder: 1px;
+$artRowHeight: 50px;
+
+.article{
+    overflow: scroll;
+}
+
+ul li{
+    cursor: pointer;    
+    border-radius: 5% !important;
+    height: $artRowHeight;
+    justify-content: center;
+    background-color: transparent !important;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s;
+    &:hover{
+        background-color: white !important;
+    }
+}
+body.admin ul li{
+    padding-bottom: 50px;    
+    &:hover{
+        background-color: transparent !important;
+    }
+}
+
+.mainContent{
+    h1{
+        font-size: 1.3rem;
+    }
+    input:focus{
+        outline: none;
+    }
+}
+
+.del{        
+    transition: .3s;
+    font-weight: 900;
+    &:hover{
+        background-color: #ff4757;
+    }
+}
